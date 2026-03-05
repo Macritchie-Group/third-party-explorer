@@ -25,15 +25,7 @@ export function TargetLayers({ filtered }: Props) {
         type="circle"
         filter={["has", "point_count"]}
         paint={{
-          "circle-color": [
-            "step",
-            ["get", "point_count"],
-            "#51bbd6",
-            100,
-            "#f1f075",
-            750,
-            "#f28cb1",
-          ],
+          "circle-color": "#000000",
           "circle-radius": [
             "step",
             ["get", "point_count"],
@@ -56,6 +48,9 @@ export function TargetLayers({ filtered }: Props) {
           "text-font": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
           "text-size": 12,
         }}
+        paint={{
+          "text-color": "#FFFFFF",
+        }}
       />
 
       {/* Individual points */}
@@ -67,8 +62,8 @@ export function TargetLayers({ filtered }: Props) {
           "circle-color": [
             "case",
             ["==", ["get", "CompanyType"], "Multi-Op"],
-            "#D4A017",
-            "#2563EB",
+            "#DC2626",
+            "#6B7280",
           ],
           "circle-radius": 6,
           "circle-stroke-width": 1,

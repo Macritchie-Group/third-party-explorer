@@ -25,7 +25,7 @@ export function CompanyTypeFilter({ selected, onToggle }: Props) {
                 className="inline-block w-3 h-3 rounded-full mr-1"
                 style={{
                   backgroundColor:
-                    type === "Multi-Op" ? "#D4A017" : "#2563EB",
+                    type === "Multi-Op" ? "#DC2626" : "#6B7280",
                 }}
               />
               {type}

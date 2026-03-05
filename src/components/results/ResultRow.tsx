@@ -24,7 +24,7 @@ export function ResultRow({ facility: f, onClick }: Props) {
           <div
             className="text-xs font-medium"
             style={{
-              color: f.CompanyType === "Multi-Op" ? "#D4A017" : "#2563EB",
+              color: f.CompanyType === "Multi-Op" ? "#DC2626" : "#6B7280",
             }}
           >
             {f.CompanyType}

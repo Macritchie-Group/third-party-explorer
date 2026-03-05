@@ -44,7 +44,9 @@ export async function loadData(): Promise<{
     if (facility.isOwned) {
       owned.push(facility);
     } else if (facility.CompanyType !== "REIT") {
-      targets.push(facility);
+      if (facility.TotalSqft <= 250_000) {
+        targets.push(facility);
+      }
     }
     // REITs are dropped entirely
   }
