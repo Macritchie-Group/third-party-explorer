@@ -1,0 +1,8 @@
+node_modules/
+dist/
+data/
+.env
+.env.local
+*.Zone.Identifier
+*.tsbuildinfo
+supply_general.xlsx
